@@ -242,12 +242,11 @@ export default function Game() {
         {/* Title card + tap hint — visible before first tap, retire after. */}
         {phase === 'idle' && taps.size === 0 && (
           <>
+            <div className="lc-topveil" />
             <div className="lc-title">
-              <div className="lc-title__overline">
-                <span>// the car that only goes down</span>
-              </div>
+              <div className="lc-title__overline">// the car that only goes down</div>
               <div className="lc-title__main">GOING&nbsp;DOWN</div>
-              <div className="lc-title__sub">[&nbsp; CAR 3 &nbsp;//&nbsp; 02:14 &nbsp;//&nbsp; B-LEVELS &nbsp;]</div>
+              <div className="lc-title__sub">[&nbsp;CAR&nbsp;3&nbsp;]&nbsp;&nbsp;//&nbsp;&nbsp;02:14&nbsp;&nbsp;//&nbsp;&nbsp;B&#8209;LEVELS</div>
             </div>
             <div className="lc-firsthint">{t('hint.firstTap')}</div>
           </>
